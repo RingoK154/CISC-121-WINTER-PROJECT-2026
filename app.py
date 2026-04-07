@@ -2,26 +2,27 @@ import gradio as gr
 
 # ============================ Quick Sort FUNCTION ============================
 def quicksort(a):
-  smaller =[]
+  smaller =[] # Setting up 3 stacks to store the numbers
   equal = []
   larger = []
 
-  if len(a) < 2:
+  if len(a) < 2: # Restraint to pause the process
     return a
     print(a)
 
-  mid = a[len(a)//2]
+  mid = a[len(a)//2] #To get the index/ the position of the middle number of the list
   for number in a:
     if number < mid:
-      smaller.append(number)
+      smaller.append(number) #Selecting and putting numbers in each stack based on the requirement 
     if number == mid:
       equal.append(number)
     if number > mid:
       larger.append(number)
-  decend_a = quicksort(smaller)
+  # Putting together a sorted list when the process finishes
+  decend_a = quicksort(smaller) #Samaller stack put first 
   decend_a += equal
-  decend_a += quicksort(larger)
-  
+  decend_a += quicksort(larger) #Larger Stack put last in order
+  # Both smaller and larger stacks will go through the quicksort function again 
   return decend_a
 
 def sort_numbers(input_string):
@@ -34,6 +35,7 @@ def sort_numbers(input_string):
 
 # ============================ USER INTERFACE ============================
 with gr.Blocks(title="Quicksort App", theme=gr.themes.Glass(), css="""
+
 #input_box, #output_box {
     max-width: 500px;
     margin: auto;
@@ -47,7 +49,8 @@ with gr.Blocks(title="Quicksort App", theme=gr.themes.Glass(), css="""
 #title {
     text-align: center;
 }
-               """) as demo:
+
+               """) as demo: # I am using CSS due to the limited editing detail of the user interface in Gradio to get a better experience for users.
     gr.Markdown("### Quicksort Number Sorter ",
                 elem_id="title"
     )
