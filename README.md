@@ -2,6 +2,7 @@
 Winter 2026 CISC 121 FINAL PROJECT
 ## Quick Sort
 https://github.com/user-attachments/assets/2a578270-0fe2-4d8f-b7bb-80da709a0030
+
 I decided to choose Quick Sorting as an application to help with sorting numbers in ascending order (small to large).
 
 Quick Sort an unsorted list of numbers/integers by choosing a number from the list (usually the middle index of the list), then assign the rest of the numbers into stacks of larger than, smaller than and equal to the middle number. Then put the smaller stack first in order, then the equal stack and last is the larger stack. Then repeat the same process for smaller and larger stacks until the total number within a stack is less than 2. The result would be a sorted list of input numbers in ascending order. 
