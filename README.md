@@ -26,6 +26,9 @@ Users don't have to put commas between numbers in the input to save time, and wi
 * User type in unsorted numbers in the input field and get the sorted list. 
 <img width="781" height="272" alt="image" src="https://github.com/user-attachments/assets/314ccd99-5901-4a4d-8d5d-2068bc2fcaba" />
 
+* If the user types in a comma between numbers due to old habit, The Output will let out a message not to put commas and put a space instead. 
+<img width="760" height="274" alt="image" src="https://github.com/user-attachments/assets/63555399-db4c-4751-b58e-f94735fb4262" />
+
 ## Hugging Face Link
 To check the application, use the Hugging Face link: https://huggingface.co/spaces/RingVN/CISC121_PROJECT_WINTER2026_QUICK_SORT
 
