@@ -24,8 +24,6 @@ def quicksort(a):
   
   return decend_a
 
-
-# ============================ USER INTERFACE ============================
 def sort_numbers(input_string):
     try:
         a = list(map(int, input_string.split()))
@@ -34,7 +32,7 @@ def sort_numbers(input_string):
     except:
         return "Please enter numbers separated by spaces and no comma (,) "
 
-
+# ============================ USER INTERFACE ============================
 with gr.Blocks(title="Quicksort App", theme=gr.themes.Glass(), css="""
 #input_box, #output_box {
     max-width: 500px;
